@@ -1,4 +1,10 @@
-#movie-result {
+body{
+  background-image: url("https://img.freepik.com/free-vector/background-seamless-pattern-vector-with-cute-fluffy-cloud_53876-116803.jpg?semt=ais_hybrid&w=740&q=80");
+  background-size: 100%
+}
+
+
+#aisu-result {
   background: rgb(244, 98, 181);
   border: 5px solid black;
   font-size: 24px;
@@ -7,7 +13,7 @@
   margin-bottom: 20px;
 }
 
-#book-result {
+#born-result {
   background: rgb(196, 159, 255);
   border: 5px solid black;
   font-size: 24px;
