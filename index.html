@@ -27,7 +27,7 @@ Select ONE Additional Feature to Add
     <form id="aisu-form">
       <label>
         do you like icecream?
-        <select id="aisu">
+        <select id="aisu-answer">
           <option value="aisu1">YESSSSSSSOMGGG</option>
           <option value="aisu2">yea</option>
           <option value="aisu3">ehhh</option>
@@ -39,6 +39,7 @@ Select ONE Additional Feature to Add
     </form>
     <div id="aisu-result">
       <p id="aisu-text"></p>
+      <img id="aisu-img">
     </div>
     <hr />
     <!-- Book Question -->
@@ -72,7 +73,20 @@ Select ONE Additional Feature to Add
         } 
 
         if (answer === "aisu2") {
-          $("#aisu-text").text("yayyy!!! kaito LOVES icecream!!!!!!!!!");
+          $("#aisu-text").text("yayyy!!! kaito LOVES icecream!!!!!!!!! probably a bit more than u do though! XD");
+        }
+
+        if (answer === "aisu3") {
+          $("#aisu-text").text("that's okay!! to each their own");
+        }
+
+        if (answer === "aisu4") {
+          $("#aisu-text").text("oh.... no i mean ... that's fine i guess...");
+          $("#aisu-img").attr("src","https://media1.tenor.com/m/_0QwTDpTyFMAAAAd/kaito-kaito-dayo.gif")
+        }
+
+        if (answer === "aisu5") {
+          $("#aisu-text").text("..oh,h,,, oh,,, oh ok,,,");
         }
       });
 
