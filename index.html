@@ -57,10 +57,33 @@ Select ONE Additional Feature to Add
     </form>
     <div id="born-result">
       <p id="born-text"></p>
+      <img id="born-img">
     </div>
+
+    <form id="sing-form">
+      <label>
+        do you like to sing?
+        <select id="sing-answer">
+          <option value="sing1">yea!!</option>
+          <option value="sing2">ehhh</option>
+          <option value="sing3">nah</option>
+        </select>
+      </label>
+      <button type="submit">KAITO TOO?</button>
+    </form>
+    <div id="sing-result">
+      <p id="sing-text"></p>
+      <img id="sing-img">
+    </div>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
-      
+
+      $("#aisu-result").hide();
+      $("#born-result").hide();
+      $("#sing-result").hide();
+
       //========================Movie Question jQuery Code
       $("#aisu-form").on("submit", function (event) {
         event.preventDefault();
@@ -68,25 +91,31 @@ Select ONE Additional Feature to Add
         var $answer = $("#aisu-answer");
         var answer = $answer.val();
 
+        $("#aisu-result").fadeIn(1000);
+
         if (answer === "aisu1") {
           $("#aisu-text").text("OMGMGMGMGMGMGMGMMGMGMMGMGMGMGMGMGMGMG U R JUST LIKE KAITO FR OMG WOWWW");
+          $("#aisu-img").attr("src","https://media1.tenor.com/m/3-K_WpNGubQAAAAC/kaito-vocaloid.gif");
         } 
 
         if (answer === "aisu2") {
           $("#aisu-text").text("yayyy!!! kaito LOVES icecream!!!!!!!!! probably a bit more than u do though! XD");
+          $("#aisu-img").attr("src","https://media.tenor.com/WJtUix3cQyMAAAAi/kaito-vocaloid.gif");
         }
 
         if (answer === "aisu3") {
           $("#aisu-text").text("that's okay!! to each their own");
+          $("#aisu-img").attr("src","https://media.tenor.com/cf3hKlFEeVsAAAAi/kaito-ball-ball.gif");
         }
 
         if (answer === "aisu4") {
           $("#aisu-text").text("oh.... no i mean ... that's fine i guess...");
-          $("#aisu-img").attr("src","https://media1.tenor.com/m/_0QwTDpTyFMAAAAd/kaito-kaito-dayo.gif")
+          $("#aisu-img").attr("src","https://media1.tenor.com/m/_0QwTDpTyFMAAAAd/kaito-kaito-dayo.gif");
         }
 
         if (answer === "aisu5") {
           $("#aisu-text").text("..oh,h,,, oh,,, oh ok,,,");
+          $("#aisu-img").attr("src","https://media.tenor.com/dbh5MoNKvE0AAAAi/anime-boy.gif");
         }
       });
 
@@ -94,14 +123,29 @@ Select ONE Additional Feature to Add
       $("#born-form").on("submit", function (event) {
         event.preventDefault();
 
+        $("#born-result").fadeIn(1000);
+
         var $answer = $("#born-answer");
         var answer = $answer.val();
 
         if (answer === "born4") {
           $("#born-text").text("OMGGGGG KAITO TOO OGMMGOMGOM KAITO'S TWIN");
+           $("#born-img").attr("src", "https://i.ytimg.com/vi/SUXQ7L1D2Dw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBgpTifEgJOBYjXW7Ty6xbzsgdlhw");
         } 
         else {
           $("#born-text").text("a lovely season!!! not KAITO's though!");
+        }
+
+        if (answer === "born1") {
+          $("#born-img").attr("src", "https://static.wikia.nocookie.net/projectsekai/images/c/c0/Happy_Anniversary%21%21_%28KAITO%29.png/revision/latest/scale-to-width-down/1000?cb=20220216220729");
+        }
+
+        if (answer === "born2") {
+          $("#born-img").attr("src", "https://static.wikia.nocookie.net/projectsekai/images/d/d1/Trust_In_Your_Acts_Of_Support_T.png/revision/latest/scale-to-width-down/1000?cb=20230520030028");
+        }
+
+        if (answer === "born3") {
+          $("#born-img").attr("src", "https://static.wikia.nocookie.net/projectsekai/images/3/39/A_Curious_Rascal_T.png/revision/latest/scale-to-width-down/1000?cb=20240330042743");
         }
       });
       
