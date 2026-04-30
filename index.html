@@ -1,9 +1,9 @@
 <!-- Unit 12 Project
 Requirements
-[  ] Two Interactive Drop-down Inputs 
-[  ] Standard Animation
+[ iesss ] Two Interactive Drop-down Inputs 
+[ oooh yeaaah ] Standard Animation
 [  ] Custom Animation
-[  ] Include Three Images
+[ all over the place ] Include Three Images
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Google Font
@@ -59,6 +59,7 @@ Select ONE Additional Feature to Add
       <p id="born-text"></p>
       <img id="born-img">
     </div>
+    <hr />
 
     <form id="sing-form">
       <label>
@@ -76,6 +77,25 @@ Select ONE Additional Feature to Add
       <img id="sing-img">
     </div>
 
+    <hr />
+
+    <form id="dance-form">
+      <label>
+        how about dancing?
+        <select id="dance-answer">
+          <option value="dance1">YEA!! *does a little jig*</option>
+          <option value="dance2">im not good at it</option>
+          <option value="dance3">ehhh</option>
+          <option value="dance4">NO 🤬</option>
+        </select>
+      </label>
+      <button type="submit">KAITO TOO?</button>
+    </form>
+    <div id="dance-result">
+      <p id="dance-text"></p>
+      <img id="dance-img">
+    </div>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
@@ -83,6 +103,7 @@ Select ONE Additional Feature to Add
       $("#aisu-result").hide();
       $("#born-result").hide();
       $("#sing-result").hide();
+      $("#dance-result").hide();
 
       //========================Movie Question jQuery Code
       $("#aisu-form").on("submit", function (event) {
@@ -147,6 +168,63 @@ Select ONE Additional Feature to Add
         if (answer === "born3") {
           $("#born-img").attr("src", "https://static.wikia.nocookie.net/projectsekai/images/3/39/A_Curious_Rascal_T.png/revision/latest/scale-to-width-down/1000?cb=20240330042743");
         }
+      });
+
+
+      $("#sing-form").on("submit", function (event) {
+        event.preventDefault();
+
+        $("#sing-result").fadeIn(1000);
+
+        var $answer = $("#sing-answer");
+        var answer = $answer.val();
+
+        if (answer === "sing1") {
+          $("#sing-text").text("OMGGGGG U R JUST LIKE KAITO!!!!!!!!!");
+           $("#sing-img").attr("src", "https://i.ytimg.com/vi/SUXQ7L1D2Dw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBgpTifEgJOBYjXW7Ty6xbzsgdlhw");
+        } 
+        else {
+          $("#sing-text").text("that's okay!! im sure ur AMAZING at whatever u ARE passionate about!!");
+        }
+
+        if (answer === "sing1") {
+          $("#sing-img").attr("src", "divasinging.jpeg");
+        }
+
+        else {
+          $("#sing-img").attr("src", "https://media1.tenor.com/m/re2boVu0UakAAAAd/kaito-vocaloid.gif");
+        }
+      });
+
+
+      $("#dance-form").on("submit", function (event) {
+        event.preventDefault();
+
+        $("#dance-result").fadeIn(1000);
+
+        var $answer = $("#dance-answer");
+        var answer = $answer.val();
+
+        if (answer === "dance1") {
+          $("#dance-text").text("KAITO IS THAT YOU????!??! OMG!!");
+          $("#dance-img").attr("src", "https://media1.tenor.com/m/0Wic0MnzN2sAAAAC/kaito-vocaloid.gif");
+        } 
+        
+        if (answer === "dance2") {
+           $("#dance-text").text("thats totally fine !! what matters is having fun !!! 💙");
+          $("#dance-img").attr("src", "NOKUHASHI.jpg");
+        }
+
+       if (answer === "dance3" && "dance4") {
+          $("#dance-text").text("that's totally chill, im sure ur super talented at something else!!! 💙");
+          $("#dance-img").attr("src", "XDPIISU.png");
+        }
+
+         
+
+        
+
+        
       });
       
     </script>
