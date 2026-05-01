@@ -12,6 +12,9 @@ body{
   margin-top: 10px;
   margin-bottom: 20px;
   border-radius: 20px;
+  width: fit-content;
+  margin: auto;
+  padding: 10px;
 }
 
 #born-result {
@@ -22,6 +25,9 @@ body{
   margin-top: 10px;
   margin-bottom: 20px;
   border-radius: 20px;
+  width: fit-content;
+  margin: auto;
+  padding: 10px;
 }
 
 #sing-result {
@@ -32,6 +38,9 @@ body{
   margin-top: 10px;
   margin-bottom: 20px;
   border-radius: 20px;
+  width: fit-content;
+  margin: auto;
+  padding: 10px;
 }
 
 #dance-result {
@@ -42,6 +51,9 @@ body{
   margin-top: 10px;
   margin-bottom: 20px;
   border-radius: 20px;
+  width: fit-content;
+  margin: auto;
+  padding: 10px;
 }
 
 hr {
@@ -53,6 +65,37 @@ button{
   padding: 10px;
   border-radius: 10px;
   border-color: rgb(70, 54, 216);
+  font-family: "Nunito";
+  font-weight: bold;
+  background-color: rgb(255, 249, 213);
+}
+
+img{
+  display: block;
+  margin: auto;
+}
+
+h1{
+  text-align: center;
+  font-family: "Fascinate Inline";
+  font-weight: normal;
+  font-size: 60px;
+}
+
+select{
+  font-family: "Nunito";
+  padding: 3px;
+   border-radius: 10px;
+}
+
+option{
+  background-color: rgb(215, 239, 255);
+}
+
+form{
+  font-family: "Nunito";
+  padding: 3px;
+  border-radius: 10px;
 }
 
 
