@@ -98,6 +98,31 @@ Select ONE Additional Feature to Add
       <p id="dance-text"></p>
       <img id="dance-img">
     </div>
+    <hr />
+
+    <form id="music-form">
+      <label>
+        fave genre of music? :D
+        <select id="music-answer">
+          <option value="music1">pop</option>
+          <option value="music2">rock</option>
+          <option value="music3">r&b</option>
+          <option value="music4">jazz</option>
+          <option value="music5">latin</option>
+          <option value="music6">hip-hop</option>
+          <option value="music7">country</option>
+          <option value="music8">edm</option>
+          <option value="music9">something more niche!!</option>
+          <option value="music10">can't choose...</option>
+          <option value="music11">EVERYTHING!!!</option>
+        </select>
+      </label>
+      <button type="submit">KAITO TOO?</button>
+    </form>
+    <div id="music-result">
+      <p id="music-text"></p>
+      <img id="music-img">
+    </div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -107,6 +132,7 @@ Select ONE Additional Feature to Add
       $("#born-result").hide();
       $("#sing-result").hide();
       $("#dance-result").hide();
+      $("#music-result").hide();
 
       //========================Movie Question jQuery Code
       $("#aisu-form").on("submit", function (event) {
@@ -230,13 +256,35 @@ Select ONE Additional Feature to Add
        if (answer === "dance3" && "dance4") {
           $("#dance-text").text("that's totally chill, im sure ur super talented at something else!!! 💙");
           $("#dance-img").attr("src", "XDPIISU.png");
+        } 
+      });
+
+      $("#music-form").on("submit", function (event) {
+        event.preventDefault();
+
+        $("#music-result").fadeIn(1000);
+        $("#music-img").attr("src", "https://static.wikitide.net/projectsekaiwiki/1/19/KAITO_19_gacha_cutout.png").animate({
+          width: "400px"}, 1000);
+
+        var $answer = $("#music-answer");
+        var answer = $answer.val();
+
+        
+        if (answer === "music9") {
+          $("#music-text").text("sry for not including it, the list was already long... but anyway i bet it's awesome and that KAITO loves it too!!!!");
+        } 
+
+        if (answer === "music10") {
+          $("#music-text").text("that's real XDDDD");
+        } 
+        
+        if (answer === "music11") {
+           $("#music-text").text("OMG U R LITERALLYYYYY KAITO!!!!!!!!! 💙💙💙💙💙💙💙");
         }
 
-         
-
-        
-
-        
+       if (answer === "music1" && "music2" && "music3" && "music4" && "music5" && "music6" && "music8") {
+          $("#music-text").text("kaito loves that too!!!! not the most kaito-y answer though...");
+        } 
       });
       
     </script>
