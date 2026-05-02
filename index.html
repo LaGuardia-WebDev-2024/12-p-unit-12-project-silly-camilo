@@ -2,15 +2,15 @@
 Requirements
 [ iesss ] Two Interactive Drop-down Inputs 
 [ oooh yeaaah ] Standard Animation
-[  ] Custom Animation
+[ yess ] Custom Animation
 [ all over the place ] Include Three Images
 
 Select ONE Additional Feature to Add  
 [ yess ] Feature 1 - Google Font
-[ no ] Feature 2 - Chain jQuery Methods
+[ yess ] Feature 2 - Chain jQuery Methods
 [ no ] Feature 3 - .mouseover() & .mouseOut() Methods
 [ no ] Feature 4 - :hover Feature 
-[ no ] Feature 5 - Add an Additional Interactive Drop-down
+[ yes ] Feature 5 - Add an Additional Interactive Drop-down
 -->
 
 <!DOCTYPE html>
@@ -119,27 +119,36 @@ Select ONE Additional Feature to Add
 
         if (answer === "aisu1") {
           $("#aisu-text").text("OMGMGMGMGMGMGMGMMGMGMMGMGMGMGMGMGMGMG U R JUST LIKE KAITO FR OMG WOWWW");
-          $("#aisu-img").attr("src","https://media1.tenor.com/m/3-K_WpNGubQAAAAC/kaito-vocaloid.gif");
+          $("#aisu-img").attr("src","https://media1.tenor.com/m/3-K_WpNGubQAAAAC/kaito-vocaloid.gif").animate({
+          width: "400px"}, 1000);
         } 
 
         if (answer === "aisu2") {
           $("#aisu-text").text("yayyy!!! kaito LOVES icecream!!!!!!!!! probably a bit more than u do though! XD");
-          $("#aisu-img").attr("src","https://media.tenor.com/WJtUix3cQyMAAAAi/kaito-vocaloid.gif");
+          $("#aisu-img").attr("src","https://media.tenor.com/WJtUix3cQyMAAAAi/kaito-vocaloid.gif").animate({
+          width: "400px"
+        }, 1000);
         }
 
         if (answer === "aisu3") {
           $("#aisu-text").text("that's okay!! to each their own");
-          $("#aisu-img").attr("src","https://media.tenor.com/cf3hKlFEeVsAAAAi/kaito-ball-ball.gif");
+          $("#aisu-img").attr("src","https://media.tenor.com/cf3hKlFEeVsAAAAi/kaito-ball-ball.gif").animate({
+          width: "400px"
+        }, 1000);
         }
 
         if (answer === "aisu4") {
           $("#aisu-text").text("oh.... no i mean ... that's fine i guess...");
-          $("#aisu-img").attr("src","https://media1.tenor.com/m/_0QwTDpTyFMAAAAd/kaito-kaito-dayo.gif");
+          $("#aisu-img").attr("src","https://media1.tenor.com/m/_0QwTDpTyFMAAAAd/kaito-kaito-dayo.gif").animate({
+          width: "400px"
+        }, 1000);
         }
 
         if (answer === "aisu5") {
           $("#aisu-text").text("..oh,h,,, oh,,, oh ok,,,");
-          $("#aisu-img").attr("src","https://media.tenor.com/dbh5MoNKvE0AAAAi/anime-boy.gif");
+          $("#aisu-img").attr("src","https://media.tenor.com/dbh5MoNKvE0AAAAi/anime-boy.gif").animate({
+          width: "400px"
+        }, 1000);
         }
       });
 

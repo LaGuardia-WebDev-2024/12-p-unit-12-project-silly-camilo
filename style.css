@@ -3,6 +3,9 @@ body{
   background-size: 100%
 }
 
+html{
+  color: rgb(70, 54, 216);
+}
 
 #aisu-result {
   background: rgb(200, 217, 255);
@@ -15,6 +18,7 @@ body{
   width: fit-content;
   margin: auto;
   padding: 10px;
+  font-family: "Nunito";
 }
 
 #born-result {
@@ -28,6 +32,7 @@ body{
   width: fit-content;
   margin: auto;
   padding: 10px;
+  font-family: "Nunito";
 }
 
 #sing-result {
@@ -41,6 +46,7 @@ body{
   width: fit-content;
   margin: auto;
   padding: 10px;
+  font-family: "Nunito";
 }
 
 #dance-result {
@@ -54,6 +60,7 @@ body{
   width: fit-content;
   margin: auto;
   padding: 10px;
+  font-family: "Nunito";
 }
 
 hr {
@@ -73,6 +80,7 @@ button{
 img{
   display: block;
   margin: auto;
+  border-radius: 20px;
 }
 
 h1{
@@ -86,6 +94,7 @@ select{
   font-family: "Nunito";
   padding: 3px;
    border-radius: 10px;
+   background-color: white;
 }
 
 option{
@@ -96,6 +105,9 @@ form{
   font-family: "Nunito";
   padding: 3px;
   border-radius: 10px;
+  font-size: 20px;
 }
+
+
 
 
