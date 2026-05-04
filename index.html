@@ -25,11 +25,12 @@ Select ONE Additional Feature to Add
   </head>
   <body>
     <h1>HOW KAITO R U ??</h1>
+    <img id="header" src="pastel-cards.gif">
     <hr />
     <!-- Movie Question -->
     <form id="aisu-form">
       <label>
-        do you like icecream?
+        ˖ ܁♬⋆.˚ do you like icecream?
         <select id="aisu-answer">
           <option value="aisu1">YESSSSSSSOMGGG</option>
           <option value="aisu2">yea</option>
@@ -38,7 +39,7 @@ Select ONE Additional Feature to Add
           <option value="aisu5">EWWW *THROWS UP*</option>
         </select>
       </label>
-      <button type="submit">KAITO APPROVED?</button>
+      <button type="submit">KAITO TOO?</button>
     </form>
     <div id="aisu-result">
       <p id="aisu-text"></p>
@@ -48,7 +49,7 @@ Select ONE Additional Feature to Add
     <!-- Book Question -->
     <form id="born-form">
       <label>
-        what season were u born in?
+        ₊˚⊹♡ what season were u born in?
         <select id="born-answer">
           <option value="born1">spring</option>
           <option value="born2">summer</option>
@@ -66,7 +67,7 @@ Select ONE Additional Feature to Add
 
     <form id="sing-form">
       <label>
-        do you like to sing?
+        ‧₊˚♪ 𝄞₊˚ do you like to sing?
         <select id="sing-answer">
           <option value="sing1">yea!!</option>
           <option value="sing2">ehhh</option>
@@ -84,7 +85,7 @@ Select ONE Additional Feature to Add
 
     <form id="dance-form">
       <label>
-        how about dancing?
+        ₊˚⊹♡  how about dancing?
         <select id="dance-answer">
           <option value="dance1">YEA!! *does a little jig*</option>
           <option value="dance2">im not good at it</option>
@@ -102,7 +103,7 @@ Select ONE Additional Feature to Add
 
     <form id="music-form">
       <label>
-        fave genre of music? :D
+        ˖ ܁♬⋆.˚ fave genre of music? :D
         <select id="music-answer">
           <option value="music1">pop</option>
           <option value="music2">rock</option>
@@ -219,7 +220,8 @@ Select ONE Additional Feature to Add
 
         if (answer === "sing1") {
           $("#sing-text").text("OMGGGGG U R JUST LIKE KAITO!!!!!!!!!");
-           $("#sing-img").attr("src", "https://i.ytimg.com/vi/SUXQ7L1D2Dw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBgpTifEgJOBYjXW7Ty6xbzsgdlhw");
+           $("#sing-img").attr("src", "https://i.ytimg.com/vi/SUXQ7L1D2Dw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBgpTifEgJOBYjXW7Ty6xbzsgdlhw").animate({
+          width: "400px"}, 1000);
         } 
         else {
           $("#sing-text").text("that's okay!! im sure ur AMAZING at whatever u ARE passionate about!!");
@@ -281,6 +283,8 @@ Select ONE Additional Feature to Add
         
         if (answer === "music11") {
            $("#music-text").text("OMG U R LITERALLYYYYY KAITO!!!!!!!!! 💙💙💙💙💙💙💙");
+           $("#music-img").attr("src", "https://static.wikitide.net/projectsekaiwiki/thumb/2/22/KAITO_52_art.png/1920px-KAITO_52_art.png").animate({
+          width: "800px"}, 1000);
         }
 
        if (answer === "music1" && "music2" && "music3" && "music4" && "music5" && "music6" && "music8") {
